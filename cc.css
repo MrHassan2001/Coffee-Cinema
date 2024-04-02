@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.content{
+    /* padding: 20px; */
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./img/banner_bg01.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.navbar{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 25px;
+}
+.nav-left a{
+    text-decoration: none;
+    color: brown;
+}
+
+.nav-cinter ul {
+display: flex;
+
+}
+.nav-cinter ul li{
+    list-style: none;
+}
+.nav-cinter ul li a{
+   text-decoration: none;
+   color: aliceblue;
+   padding: 0px 10px;
+   transition: 0.4s;
+}
+.nav-cinter a:hover{
+    color: #e5e216;
+}
+.nav-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+   
+.nav-right span{
+    margin-right: 12px;
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 25px;
+}
+.select{
+    font-size: 15px;
+    border: none;
+    background: none;
+    color: aliceblue;
+    margin-right: 12px;
+    transition: 0.4s;
+}
+.select:hover{
+    color: #333;
+}
+ .jj{
+background: none;
+border: none;
+padding: 15px;
+font-size: 15px;
+width: 100px;
+color: aliceblue;
+border-radius: 35px;
+border: solid #e5e216 2px;
+transition: 0.4s;
+}
+ .jj:hover{
+    background-color: #e5e216;
+    color: #333;
+}
+.cinter{
+  padding: 200px 60px;
+}
+h2{
+    color: #e5e216;
+    font-size: 30px;
+    font-weight: 700;
+}
+h1{
+    font-size: 33px;
+    color: aliceblue;
+    font-weight: 600px;
+}
+h1 span{
+    font-size: 33px;
+    color: #e5e216;
+    font-weight: 600px;
+}
+.div-p{
+display: flex;
+font-size: 20px;
+}
+.div-p p{
+    background-color: aliceblue;
+    margin: 0px 6px;
+ cursor: pointer;
+}
+/****************************************************************************************/
+.main-poster{
+     height: 100%;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+ 
+     background-image: url(./img/pg/services_bg.jpg);
+    background-size: cover;
+}
+.title{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 130px;
+}
+.title-left p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #e5e216;
+}
+.title-left h1{
+    font-size: 40px;
+    color: antiquewhite;
+}
+.titlr-r a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: antiquewhite;
+    background-color: #21232b;
+    padding: 20px;
+    border-radius: 50px;
+    border: solid #333 2px;
+    transition: 0.45;
+}
+  .titlr-r a:focus{
+   border: #e5e216 solid 2px;
+  } 
+  .fe-card{
+    display: flex;
+  }
+  .card{
+    margin-top: 20px ;
+    margin-left: 30px;
+    position: relative;
+    overflow: hidden;
+    width: 230px;
+    height: 350px;
+    border-radius: 12px;
+    margin: 40px;
+
+  }
+  .poster{
+    
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .poster img{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+ 
+  }
+.datalist{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 1.5em 1.5em 2em;
+    backdrop-filter: blur(16px);
+    background: #0000009c;
+    transition: 0.5s;
+}
+.card:hover .datalist{
+    bottom: 0;
+}
+.datalist h1{
+    color: aliceblue;
+    font-size: 26px;
+    font-weight: 800;
+   font-family: 'Courier New', Courier, monospace;
+}
+.datalist p{
+    color: aliceblue;
+}
+.div-star{
+    display: inline-block;
+}
+.div-star input{
+    display: none;
+}
+.div-star label{
+    float: right;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+}
+.div-star label::before{
+    content:'\2605';
+    font-size: 30px;
+}
+.div-star:checked ~ label,
+.div-star:hover ,
+.div-star label:hover ~ label{
+    color: #cc790d;
+    transition: 0.3s;
+}
+.data{
+    display: flex;
+    align-items: center;
+    
+background: none;
+border: none;
+padding: 15px;
+font-size: 13px;
+width: 170px;
+color: aliceblue;
+border-radius: 35px;
+border: solid #e5e216 2px;
+transition: 0.4s;
+}
+.data:hover{
+    background-color: #e5e216;
+    color: #333;
+}
+.live{
+   background-image: url(./img/pg/live_bg.jpg);
+   display: flex;
+   justify-content: space-between;
+   height: 120vh;
+   align-items: center;
+   background-position: top;
+}
+.live-left{
+   margin-left: 50px;
+}
+.p001{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #e5e216;
+}
+.p002{
+  color: #333;
+}
+.hassan{
+    color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.p003{
+    
+  color: #333;
+  font-size: 23px
+
+}
+.p003 span{
+    color: red;
+ 
+}
+.jja{
+    border-radius: 40px;
+    background-color: #e5e216;
+    color: #333;
+    border: none;
+    font-size: 20px;
+    width: 130px;
+    height: 60px;
+    margin: 12px;
+}
+.jja:hover{
+background-color: #333;
+color: #e5e216;
+}
+.title2{
+    margin: 50px;
+}
+.p004{
+    margin-left: 120px;
+    color: #e5e216;
+}
+.info{
+    height: 20vh;
+    background-image: url(./img/pg/footer_bg.jpg);
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}  
+.logo-div a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #e5e216;
+}
+
+.info-r ul{
+display: flex;
+}
+.info-r ul li{
+    list-style: none;
+}
+.info-r ul li a{
+    text-decoration: none;
+    margin-right: 12px;
+    font-size: 20px;
+    color: #fff;
+    transition: 0.6s;
+}
+.info-r ul li a:hover{
+    color: #e5e216;
+
+}
+input{
+    background: none;
+    border-radius: 40px ;
+    height: 40px;
+    color: #fff;
+    border-color: #e5e216;
+}
+.bart-5{
+    height: 10vh;
+    background-image: url(./img/pg/services_bg.jpg);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.pl-le h1{
+    font-size: 25px;
+}
+.pl-le h1 a{
+    color: #e5e216;
+}
